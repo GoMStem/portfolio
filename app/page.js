@@ -1,4 +1,5 @@
 import ContactForm from '@/components/ContactForm'
+import ScrollInit from '@/components/ScrollInit'
 
 export default function Home() {
   return (
@@ -215,6 +216,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <ScrollInit />
     </main>
   )
 }
