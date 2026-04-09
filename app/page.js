@@ -20,14 +20,9 @@ export default function Home() {
             올라운더 개발자를 향해 성장 중입니다.
           </p>
           <div className="hero-cta fade-up d5">
-            <a
-              href="https://github.com/choeun0524"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary"
-            >
+            <span className="btn btn-primary" style={{ cursor: 'default', opacity: 0.5 }}>
               <i className="fab fa-github" /> GitHub 보러가기
-            </a>
+            </span>
             <a href="#contact" className="btn btn-outline">
               연락하기 <i className="fa-solid fa-arrow-right" />
             </a>
