@@ -45,8 +45,8 @@ export default function BlogPage() {
             >
               <div className="blog-card-date">{formatDate(post.date)}</div>
               <div className="blog-card-title">{post.title}</div>
-              {post.description && (
-                <p className="blog-card-desc">{post.description}</p>
+              {(post.preview || post.description) && (
+                <p className="blog-card-desc">{post.preview || post.description}</p>
               )}
               {post.tags.length > 0 && (
                 <div className="blog-card-tags">
