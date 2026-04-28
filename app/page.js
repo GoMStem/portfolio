@@ -10,7 +10,7 @@ export default function Home() {
             Junior Developer
           </div>
           <div className="hero-name fade-up d1">김초은</div>
-          <div className="hero-role fade-up d2">Junior Developer</div>
+          <div className="hero-role fade-up d2">Cho Eun Kim</div>
           <h1 className="hero-headline fade-up d3">
             코드를 넘어,<br />
             <em>처음부터 끝까지.</em>
