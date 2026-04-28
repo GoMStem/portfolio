@@ -32,11 +32,8 @@ export default function ContactForm() {
         <label htmlFor="fmsg">메시지</label>
         <textarea id="fmsg" name="fmsg" placeholder="안녕하세요! 협업 제안 드리고 싶어서 연락드립니다." required />
       </div>
-      <button type="submit" className="btn-send" disabled={loading}>
-        {loading
-          ? <><span>전송 중...</span> <i className="fa-solid fa-spinner fa-spin" /></>
-          : <><span>메시지 보내기</span> <i className="fa-solid fa-paper-plane" /></>
-        }
+      <button type="submit" className="btn-send" disabled style={{ cursor: 'default', opacity: 0.5 }}>
+        <span>메시지 보내기</span> <i className="fa-solid fa-paper-plane" />
       </button>
       {sent && (
         <div className="f-success show">
