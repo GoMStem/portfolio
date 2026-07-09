@@ -103,6 +103,8 @@ export default function Home() {
               <div className="pills">
                 <span className="pill pill-gray">GitHub</span>
                 <span className="pill pill-gray">Notion</span>
+                <span className="pill pill-gray">n8n</span>
+                <span className="pill pill-gray">Vercel</span>
               </div>
             </div>
           </div>
