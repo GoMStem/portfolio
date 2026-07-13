@@ -24,6 +24,15 @@ const WORKS = [
   },
 ]
 
+const EXTRAS = [
+  {
+    icon: '📋',
+    name: 'Notion 학원 관리 페이지',
+    meta: '수업 일정 · 학생/학부모 관리 · 과제 트래킹',
+    tag: 'Notion',
+  },
+]
+
 export default function Home() {
   return (
     <main>
@@ -203,6 +212,31 @@ export default function Home() {
               </a>
             ))}
           </div>
+
+          {EXTRAS.length > 0 && (
+            <div className="extras fade-up">
+              <div className="extras-head">
+                <span className="extras-label">Also Crafting</span>
+                <span className="extras-title">그 외 작업</span>
+              </div>
+              <div className="extras-grid">
+                {EXTRAS.map((e, i) => (
+                  <div
+                    key={e.name}
+                    className="extra-card fade-up"
+                    style={{ transitionDelay: `${0.08 * (i + 1)}s` }}
+                  >
+                    <div className="extra-icon">{e.icon}</div>
+                    <div className="extra-body">
+                      <h4 className="extra-name">{e.name}</h4>
+                      <p className="extra-meta">{e.meta}</p>
+                    </div>
+                    <div className="extra-tag">{e.tag}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
