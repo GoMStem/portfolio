@@ -8,7 +8,7 @@ const WORKS = [
     category: 'Education · 수능 논술 코칭',
     features: [
       { icon: 'fa-arrows-rotate', label: '네이버 블로그 자동 연동' },
-      { icon: 'fa-magnifying-glass', label: 'SEO 자동화' },
+      { icon: 'fa-magnifying-glass', label: 'SEO 최적화' },
     ],
     tags: ['Next.js', 'React', 'Vercel'],
   },
