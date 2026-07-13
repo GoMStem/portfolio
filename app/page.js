@@ -140,17 +140,17 @@ export default function Home() {
             <div className="proj-card fade-up d2">
               <div className="proj-banner b2">🌐</div>
               <div className="proj-body">
-                <div className="proj-name">WordPress 홈페이지 제작</div>
+                <div className="proj-name">Next.js 홈페이지 제작</div>
                 <p className="proj-desc">
                   디자인 툴에 의존하지 않고, 코드를 직접 작성해 완성도 높은 홈페이지를 구현합니다.
-                  WordPress 환경에서 HTML/CSS/JS를 활용한 커스텀 개발로 클라이언트의 니즈에 맞는
-                  웹사이트를 처음부터 끝까지 제작할 수 있습니다.
+                  Next.js(App Router) 기반의 커스텀 개발로 빠른 로딩 속도와 검색엔진 최적화(SEO)를 갖춘
+                  웹사이트를 처음부터 끝까지 제작합니다. Vercel 자동 배포와 도메인 연결까지 한 번에 처리해 드립니다.
                 </p>
                 <div className="proj-tags">
-                  <span className="tag">WordPress</span>
-                  <span className="tag">HTML</span>
-                  <span className="tag">CSS</span>
-                  <span className="tag">JavaScript</span>
+                  <span className="tag">Next.js</span>
+                  <span className="tag">React</span>
+                  <span className="tag">Vercel</span>
+                  <span className="tag">TypeScript</span>
                 </div>
               </div>
             </div>
