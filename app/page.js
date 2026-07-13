@@ -5,7 +5,7 @@ const WORKS = [
     name: '연세호쌤',
     host: 'www.yonsei-hossam.com',
     url: 'https://www.yonsei-hossam.com/',
-    category: 'Education · 학원',
+    category: 'Education · 수능 논술 코칭',
     features: [
       { icon: 'fa-arrows-rotate', label: '네이버 블로그 자동 연동' },
       { icon: 'fa-magnifying-glass', label: 'SEO 자동화' },
