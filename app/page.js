@@ -164,6 +164,79 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── FEATURED WORK ── */}
+      <section id="works">
+        <div className="works-bg" aria-hidden="true">
+          <span className="works-orb works-orb-1" />
+          <span className="works-orb works-orb-2" />
+          <span className="works-grid" />
+        </div>
+        <div className="inner">
+          <div className="fade-up works-head">
+            <span className="sec-label">Featured Work</span>
+            <p className="sec-sub">클라이언트와 함께 만든 실제 라이브 사이트</p>
+            <h2 className="sec-title">라이브 사이트</h2>
+            <div className="sec-divider" />
+          </div>
+
+          <a
+            href="https://www.yonsei-hossam.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="work-hero fade-up d1"
+            aria-label="연세호쌤 홈페이지 방문하기"
+          >
+            <div className="work-hero-left">
+              <div className="work-badge">
+                <span className="work-badge-dot" />
+                LIVE · 운영중
+              </div>
+              <div className="work-meta">Education · Client Project</div>
+              <h3 className="work-title">연세호쌤 홈페이지</h3>
+              <p className="work-desc">
+                클라이언트의 니즈를 파악해 기획부터 배포까지 직접 담당한 실제 운영 중인 사이트입니다.
+                Next.js App Router로 성능과 SEO를 챙기고, Vercel 자동 배포와 커스텀 도메인 연결까지
+                한 번에 세팅했습니다.
+              </p>
+              <div className="work-tags">
+                <span className="work-tag">Next.js</span>
+                <span className="work-tag">React</span>
+                <span className="work-tag">Vercel</span>
+              </div>
+              <div className="work-cta">
+                <span>Visit Live Site</span>
+                <i className="fa-solid fa-arrow-up-right-from-square" />
+              </div>
+            </div>
+
+            <div className="work-hero-right">
+              <div className="browser-frame">
+                <div className="browser-chrome">
+                  <div className="browser-dots">
+                    <span /><span /><span />
+                  </div>
+                  <div className="browser-address">
+                    <i className="fa-solid fa-lock" />
+                    <span>www.yonsei-hossam.com</span>
+                  </div>
+                  <div className="browser-actions">
+                    <i className="fa-solid fa-arrow-up-right-from-square" />
+                  </div>
+                </div>
+                <div className="browser-body">
+                  <img
+                    src="https://image.thum.io/get/width/1400/crop/1000/noanimate/https://www.yonsei-hossam.com/"
+                    alt="연세호쌤 홈페이지 미리보기"
+                    loading="lazy"
+                  />
+                  <div className="browser-glow" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
       {/* ── CONTACT ── */}
       <section id="contact">
         <div className="inner">
