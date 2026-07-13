@@ -1,4 +1,24 @@
 import ContactForm from '@/components/ContactForm'
+
+const WORKS = [
+  {
+    name: '연세호쌤',
+    host: 'www.yonsei-hossam.com',
+    url: 'https://www.yonsei-hossam.com/',
+    category: 'Education · 학원 브랜드 사이트',
+    desc: '학원 소개와 상담 신청, 커리큘럼 안내를 담은 반응형 웹사이트. Next.js App Router 기반으로 성능과 SEO를 챙기고, Vercel 자동 배포와 커스텀 도메인 연결까지 세팅했습니다.',
+    tags: ['Next.js', 'React', 'Vercel'],
+  },
+  {
+    name: 'Hello Readers',
+    host: 'helloreaders.co.nz',
+    url: 'https://helloreaders.co.nz/',
+    category: 'Education · Literacy (NZ)',
+    desc: '뉴질랜드 기반 리터러시 교육 브랜드의 소개와 서비스 정보를 담은 반응형 웹사이트를 직접 제작했습니다. 브랜드 톤에 맞춘 UI와 안정적인 배포까지 함께 진행했습니다.',
+    tags: ['Next.js', 'React', 'Vercel'],
+  },
+]
+
 export default function Home() {
   return (
     <main>
@@ -114,126 +134,61 @@ export default function Home() {
       {/* ── PROJECTS ── */}
       <section id="projects">
         <div className="inner">
-          <div className="fade-up">
-            <span className="sec-label">Projects</span>
-            <p className="sec-sub">작지만 직접 만들었습니다</p>
+          <div className="fade-up projects-head">
+            <span className="sec-label">Selected Works</span>
+            <p className="sec-sub">직접 제작한 실제 라이브 사이트</p>
             <h2 className="sec-title">프로젝트</h2>
             <div className="sec-divider" />
           </div>
-          <div className="proj-grid">
-            <div className="proj-card fade-up d1">
-              <div className="proj-banner b1">📋</div>
-              <div className="proj-body">
-                <div className="proj-name">Notion 학원 관리 페이지</div>
-                <p className="proj-desc">
-                  수업 일정, 학생과 학부모님 관리, 과제 트래킹까지 — 학원 운영에 필요한 모든 것을 하나의 Notion 페이지로 정리합니다.
-                  기능 구현에 그치지 않고, 실제로 쓰는 사람의 입장에서 생각하고 만듭니다.
-                  복잡한 정보를 한눈에 파악할 수 있도록 구조화된 템플릿을 직접 설계합니다.
-                </p>
-                <div className="proj-tags">
-                  <span className="tag">Notion</span>
-                  <span className="tag">문서설계</span>
-                  <span className="tag">템플릿</span>
+          <div className="work-grid">
+            {WORKS.map((w, i) => (
+              <a
+                key={w.host}
+                href={w.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="work-card fade-up"
+                style={{ transitionDelay: `${0.1 * (i + 1)}s` }}
+                aria-label={`${w.name} 방문하기`}
+              >
+                <div className="work-card-preview">
+                  <div className="work-card-chrome">
+                    <div className="work-card-dots"><span /><span /><span /></div>
+                    <div className="work-card-address">
+                      <i className="fa-solid fa-lock" />
+                      <span>{w.host}</span>
+                    </div>
+                  </div>
+                  <div className="work-card-shot">
+                    <img
+                      src={`https://image.thum.io/get/width/900/crop/650/noanimate/${w.url}`}
+                      alt={`${w.name} 미리보기`}
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="proj-card fade-up d2">
-              <div className="proj-banner b2">⚡</div>
-              <div className="proj-body">
-                <div className="proj-name">Next.js 홈페이지 제작</div>
-                <p className="proj-desc">
-                  디자인 툴에 의존하지 않고, 코드를 직접 작성해 완성도 높은 홈페이지를 구현합니다.
-                  Next.js(App Router) 기반의 커스텀 개발로 빠른 로딩 속도와 검색엔진 최적화(SEO)를 갖춘
-                  웹사이트를 처음부터 끝까지 제작합니다. Vercel 자동 배포와 도메인 연결까지 한 번에 처리해 드립니다.
-                </p>
-                <div className="proj-tags">
-                  <span className="tag">Next.js</span>
-                  <span className="tag">React</span>
-                  <span className="tag">Vercel</span>
-                  <span className="tag">TypeScript</span>
+                <div className="work-card-body">
+                  <div className="work-card-top">
+                    <span className="work-card-live">
+                      <span className="work-card-live-dot" />
+                      LIVE
+                    </span>
+                    <span className="work-card-category">{w.category}</span>
+                  </div>
+                  <div className="work-card-header">
+                    <h3 className="work-card-name">{w.name}</h3>
+                    <i className="fa-solid fa-arrow-up-right-from-square work-card-external" />
+                  </div>
+                  <p className="work-card-desc">{w.desc}</p>
+                  <div className="work-card-tags">
+                    {w.tags.map(t => (
+                      <span key={t} className="work-card-tag">{t}</span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="proj-card cs fade-up d3">
-              <div className="cs-body">
-                <span className="e">🚀</span>
-                <p>더 많은 프로젝트를<br />준비 중입니다</p>
-              </div>
-            </div>
+              </a>
+            ))}
           </div>
-        </div>
-      </section>
-
-      {/* ── FEATURED WORK ── */}
-      <section id="works">
-        <div className="works-bg" aria-hidden="true">
-          <span className="works-orb works-orb-1" />
-          <span className="works-orb works-orb-2" />
-          <span className="works-grid" />
-        </div>
-        <div className="inner">
-          <div className="fade-up works-head">
-            <span className="sec-label">Featured Work</span>
-            <p className="sec-sub">클라이언트와 함께 만든 실제 라이브 사이트</p>
-            <h2 className="sec-title">라이브 사이트</h2>
-            <div className="sec-divider" />
-          </div>
-
-          <a
-            href="https://www.yonsei-hossam.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="work-hero fade-up d1"
-            aria-label="연세호쌤 홈페이지 방문하기"
-          >
-            <div className="work-hero-left">
-              <div className="work-badge">
-                <span className="work-badge-dot" />
-                LIVE · 운영중
-              </div>
-              <div className="work-meta">Education · Client Project</div>
-              <h3 className="work-title">연세호쌤 홈페이지</h3>
-              <p className="work-desc">
-                클라이언트의 니즈를 파악해 기획부터 배포까지 직접 담당한 실제 운영 중인 사이트입니다.
-                Next.js App Router로 성능과 SEO를 챙기고, Vercel 자동 배포와 커스텀 도메인 연결까지
-                한 번에 세팅했습니다.
-              </p>
-              <div className="work-tags">
-                <span className="work-tag">Next.js</span>
-                <span className="work-tag">React</span>
-                <span className="work-tag">Vercel</span>
-              </div>
-              <div className="work-cta">
-                <span>Visit Live Site</span>
-                <i className="fa-solid fa-arrow-up-right-from-square" />
-              </div>
-            </div>
-
-            <div className="work-hero-right">
-              <div className="browser-frame">
-                <div className="browser-chrome">
-                  <div className="browser-dots">
-                    <span /><span /><span />
-                  </div>
-                  <div className="browser-address">
-                    <i className="fa-solid fa-lock" />
-                    <span>www.yonsei-hossam.com</span>
-                  </div>
-                  <div className="browser-actions">
-                    <i className="fa-solid fa-arrow-up-right-from-square" />
-                  </div>
-                </div>
-                <div className="browser-body">
-                  <img
-                    src="https://image.thum.io/get/width/1400/crop/1000/noanimate/https://www.yonsei-hossam.com/"
-                    alt="연세호쌤 홈페이지 미리보기"
-                    loading="lazy"
-                  />
-                  <div className="browser-glow" />
-                </div>
-              </div>
-            </div>
-          </a>
         </div>
       </section>
 
