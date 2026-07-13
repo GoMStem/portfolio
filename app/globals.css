@@ -568,17 +568,11 @@ section {
   color: var(--green);
   transform: translate(2px, -2px);
 }
-.work-card-desc {
-  font-size: .875rem;
-  line-height: 1.75;
-  color: var(--gray-600);
-  margin: .1rem 0 .3rem;
-  flex: 1;
-}
 .work-card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: .4rem;
+  margin-top: auto;
 }
 .work-card-tag {
   font-family: var(--font-en);

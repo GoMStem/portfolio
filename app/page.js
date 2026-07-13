@@ -5,16 +5,14 @@ const WORKS = [
     name: '연세호쌤',
     host: 'www.yonsei-hossam.com',
     url: 'https://www.yonsei-hossam.com/',
-    category: 'Education · 학원 브랜드 사이트',
-    desc: '학원 소개와 상담 신청, 커리큘럼 안내를 담은 반응형 웹사이트. Next.js App Router 기반으로 성능과 SEO를 챙기고, Vercel 자동 배포와 커스텀 도메인 연결까지 세팅했습니다.',
+    category: 'Education · 학원',
     tags: ['Next.js', 'React', 'Vercel'],
   },
   {
     name: 'Hello Readers',
     host: 'helloreaders.co.nz',
     url: 'https://helloreaders.co.nz/',
-    category: 'Education · Literacy (NZ)',
-    desc: '뉴질랜드 기반 리터러시 교육 브랜드의 소개와 서비스 정보를 담은 반응형 웹사이트를 직접 제작했습니다. 브랜드 톤에 맞춘 UI와 안정적인 배포까지 함께 진행했습니다.',
+    category: 'Education · 영어·수학 학원 (NZ)',
     tags: ['Next.js', 'React', 'Vercel'],
   },
 ]
@@ -179,7 +177,6 @@ export default function Home() {
                     <h3 className="work-card-name">{w.name}</h3>
                     <i className="fa-solid fa-arrow-up-right-from-square work-card-external" />
                   </div>
-                  <p className="work-card-desc">{w.desc}</p>
                   <div className="work-card-tags">
                     {w.tags.map(t => (
                       <span key={t} className="work-card-tag">{t}</span>
