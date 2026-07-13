@@ -138,7 +138,7 @@ export default function Home() {
               </div>
             </div>
             <div className="proj-card fade-up d2">
-              <div className="proj-banner b2">🌐</div>
+              <div className="proj-banner b2">⚡</div>
               <div className="proj-body">
                 <div className="proj-name">Next.js 홈페이지 제작</div>
                 <p className="proj-desc">
