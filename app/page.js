@@ -6,6 +6,10 @@ const WORKS = [
     host: 'www.yonsei-hossam.com',
     url: 'https://www.yonsei-hossam.com/',
     category: 'Education · 학원',
+    features: [
+      { icon: 'fa-arrows-rotate', label: '네이버 블로그 자동 연동' },
+      { icon: 'fa-magnifying-glass', label: 'SEO 자동화' },
+    ],
     tags: ['Next.js', 'React', 'Vercel'],
   },
   {
@@ -13,6 +17,9 @@ const WORKS = [
     host: 'helloreaders.co.nz',
     url: 'https://helloreaders.co.nz/',
     category: 'Education · 영어·수학 학원 (NZ)',
+    features: [
+      { icon: 'fa-magnifying-glass', label: 'SEO 최적화' },
+    ],
     tags: ['Next.js', 'React', 'Vercel'],
   },
 ]
@@ -177,6 +184,16 @@ export default function Home() {
                     <h3 className="work-card-name">{w.name}</h3>
                     <i className="fa-solid fa-arrow-up-right-from-square work-card-external" />
                   </div>
+                  {w.features?.length > 0 && (
+                    <div className="work-card-features">
+                      {w.features.map(f => (
+                        <span key={f.label} className="work-card-feature">
+                          <i className={`fa-solid ${f.icon}`} />
+                          {f.label}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                   <div className="work-card-tags">
                     {w.tags.map(t => (
                       <span key={t} className="work-card-tag">{t}</span>

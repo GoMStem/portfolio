@@ -568,11 +568,38 @@ section {
   color: var(--green);
   transform: translate(2px, -2px);
 }
+.work-card-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-top: .2rem;
+}
+.work-card-feature {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 9px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
+  color: #F3F4F6;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  font-family: var(--font-kr);
+  border: 1px solid #374151;
+  box-shadow: 0 1px 2px rgba(17,24,39,.15);
+}
+.work-card-feature i {
+  color: var(--green-light);
+  font-size: .66rem;
+}
+
 .work-card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: .4rem;
   margin-top: auto;
+  padding-top: .3rem;
 }
 .work-card-tag {
   font-family: var(--font-en);
