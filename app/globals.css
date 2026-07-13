@@ -59,7 +59,15 @@ nav.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,.08); }
   text-decoration: none;
 }
 
-.nav-links { display: flex; gap: 2.5rem; list-style: none; margin-right: 3.5rem; }
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  position: absolute;
+  right: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .nav-links a {
   font-size: .875rem;
@@ -804,6 +812,7 @@ section {
     display: none;
     position: absolute;
     top: 64px; left: 0; right: 0;
+    transform: none;
     background: rgba(255,255,255,.97);
     flex-direction: column; gap: 0;
     border-bottom: 1px solid var(--gray-200);
