@@ -79,29 +79,28 @@ export default function Home() {
           <div className="about-grid">
             <div className="about-text fade-up d1">
               <p>
-                <strong>김초은</strong>입니다. 개발을 시작한 지 얼마 되지 않았지만,
-                단순히 기능을 구현하는 것을 넘어 서비스 전체를 이해하고
-                기획부터 배포까지 스스로 책임질 수 있는 개발자가 되고자 합니다.
+                안녕하세요, <strong>김초은</strong>입니다.
+                이제 막 개발을 시작해서 아직은 경력도 짧고 배울 것이 많지만,
+                단순히 주어진 기능만 기계적으로 구현하는 개발자가 되고 싶지는 않습니다.
+                기획부터 배포까지 서비스가 만들어지는 전체 과정을 이해하고,
+                언젠가 이 모든 단계를 스스로 책임질 수 있는 개발자가 되는 것을 목표로 달리고 있습니다.
               </p>
               <p>
-                아직 경력은 짧지만, 매일 새로운 것을 배우고 기록하며 꾸준히 성장하고 있습니다.
-                좋은 코드는 깊은 이해에서 나온다고 믿으며, 문제의 근본을 파악하는 습관을 기르고 있습니다.
-              </p>
-              <p>
-                코드만 잘 짜는 개발자가 아닌, 팀과 함께 서비스를 만들어 나갈 수 있는
-                <strong>올라운더 개발자</strong>가 되는 것이 목표입니다.
+                좋은 코드는 기술에 대한 깊은 이해와 고민에서 나온다고 믿습니다.
+                그래서 매일 마주하는 기술과 문제들을 가볍게 넘기지 않고,
+                왜 이렇게 동작하는지 원인을 파고들며 꾸준히 기록하고 성장하는 중입니다.
               </p>
             </div>
             <div className="strength-cards">
               <div className="card fade-up d2">
                 <div className="card-icon">🔍</div>
                 <div className="card-title">올라운더 지향</div>
-                <p className="card-desc">기획 → 설계 → 개발 → 배포, 모든 단계를 이해하고 주도할 수 있는 개발자를 목표로 합니다.</p>
+                <p className="card-desc">기획 → 설계 → 개발 → 배포까지 서비스의 모든 단계를 시야에 두고, 전체 흐름을 주도할 수 있는 개발자가 되기 위해 넓게 배우고 있습니다.</p>
               </div>
               <div className="card fade-up d3">
                 <div className="card-icon">🌱</div>
                 <div className="card-title">빠른 성장</div>
-                <p className="card-desc">매일 배우고 꾸준히 기록합니다. 어제보다 나은 코드를 작성하는 것을 즐깁니다.</p>
+                <p className="card-desc">매일 새롭게 배운 것을 블로그나 노트에 기록합니다. 어제보다 조금이라도 더 나은 코드를 작성하는 과정 자체를 즐깁니다.</p>
               </div>
               <div className="card fade-up d4">
                 <div className="card-icon">🤝</div>
